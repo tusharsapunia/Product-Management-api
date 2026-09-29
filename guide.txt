@@ -1,0 +1,6 @@
+1. Get All Data :-  http://localhost:3200/api/auth/get/All/get/:id
+2. Get Data By Id :- http://localhost:3200/api/auth/get/:id
+3. Delete Record :- http://localhost:3200/api/auth/delete/:id
+4. Create New Record:- http://localhost:3200/api/auth/create
+5. Update full record:- http://localhost:3200/api/auth/update/put/:id
+6. Update Details :-http://localhost:3200/api/auth/update/patch/:id
