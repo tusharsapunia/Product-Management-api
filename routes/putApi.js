@@ -14,6 +14,11 @@ router.put("/products/:id", async (req, resp) => {
   if (!Object.keys(newData).length === 0) {
     return resp.status(400).json({ error: "Request Body Cannot be Empty!" });
   }
+  const { name, description, price, stock, category, status } = req.body;
+  if (!name || !description || !price || !stock | !category || !status) {
+    resp.send({ message: "Operation failed ! plz fill all data" });
+    return false;
+  }
   const result = await collection.replaceOne(
     { _id: new ObjectId(id) },
     newData,
