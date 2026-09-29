@@ -2,8 +2,8 @@
 2. Get Data By Id :- http://localhost:3200/api/products/:id
 3. Delete Record :- http://localhost:3200/api/productsDelete/:id
 4. Create New Record:- http://localhost:3200/api/products
-5. Update full record:- http://localhost:3200/api/auth/products/:id
-6. Update Details :-http://localhost:3200/api/auth/products/:id
+5. Update full record:- http://localhost:3200/api/products/:id
+6. Update Details :-http://localhost:3200/api/products/:id
 
  
  
