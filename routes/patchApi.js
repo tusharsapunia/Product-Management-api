@@ -3,7 +3,7 @@ import { ObjectId } from "mongodb";
 const router = express.Router();
 import dbconnect from "../db.js";
 
-router.patch("/update/patch/:id", async (req, resp) => {
+router.patch("/products/:id", async (req, resp) => {
   const collection = await dbconnect();
   const id = req.params.id;
   const newData = req.body;

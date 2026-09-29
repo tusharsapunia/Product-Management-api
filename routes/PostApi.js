@@ -2,7 +2,7 @@ import express from "express";
 const router = express.Router();
 import dbconnect from "../db.js";
 
-router.post("/create", async (req, resp) => {
+router.post("/products", async (req, resp) => {
   const { name, description, price, stock, category, status } = req.body;
   if (!name || !description || !price || !stock | !category || !status) {
     resp.send({ message: "Operation failed ! plz fill all data" });

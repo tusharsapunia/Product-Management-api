@@ -1,11 +1,14 @@
 import { MongoClient, ObjectId } from "mongodb";
 
-const client = new MongoClient("mongodb://localhost:27017");
+const client = new MongoClient(
+  "mongodb+srv://tusharsapunia:TusharSapunia@cluster0.w8os3fl.mongodb.net/?appName=Cluster0",
+);
 
 async function dbconnect() {
   await client.connect();
-  const db = client.db("Product-Management");
-  return db.collection("Products");
+  // const db = client.db("Product-Management");
+  const db = client.db("product-management");
+  return db.collection("products");
 }
 
 export default dbconnect;
